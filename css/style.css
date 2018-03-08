@@ -1,6 +1,6 @@
 /*Global styles*/
         * {
-            /* #2 #font #faces */
+            /* font styles and setting margins and padding to 0 initially for all elements */
             font-family: 'Roboto','Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -10,8 +10,9 @@
             /* #2 #colorful #background */
             background-color: #F5F5F5;
         }
+        
         button, strong {
-                /* #2 #font capital #letters */
+            /* #2 #font capital #letters */
             text-transform: uppercase;
         }
 
@@ -29,9 +30,11 @@
             list-style-type: none;
         }
         li.selected {
+            /* highlighting for selected channel */
             border-left: 4px solid #9C27B0;
         }
         li {
+            /* styling and spacing for channel list tiles */
             padding: 16px;
             font-size: 16px;
             height: 48px;
@@ -39,14 +42,17 @@
             border-bottom: 1px solid #F5F5F5;
         }
         li img {
+            /* fixing vertical alignment for star icons */
             vertical-align: middle;
         }
 /*Tab bar styles*/
-        #tab-bar {            
+        #tab-bar {
+            /* white background and centered text for entire tab-bar */
             background-color: white;
             text-align: center;
         }
         #tab-bar button {
+            /* styling and sizing for tab-bar buttons */
             background-color: white;
             font-size: 13px;
             border: none;
@@ -55,26 +61,28 @@
             padding: 16x;
         }
         #tab-bar button img {
+            /* places icons above the text with added padding below and centered through auto margins */
             display: block;
             padding-bottom: 4px;
             margin: auto;
         }
         #tab-bar button.selected {
+            /* highlighting the selected tab, new */
             border-bottom: 4px solid #9C27B0;
         }
 /*Messages styles*/
         div.message {
-            /* #message containers*/
+            /* #message containers */
             width: 80%; 
             margin-bottom: 8px;
             margin-left: 2.5%;
         }
         div.my-message {
-            /* #message containers*/
+            /* additional indentation for my own message */
             margin-left: 17.5%;
         }
         .message p {
-            /* #2 #colorful #channelandchat */
+            /* colors and padding for message text */
             background-color: white;
             padding: 16px;
         }
@@ -90,10 +98,11 @@
             font-style: normal;
         }
         .message a {
+            /* colors link text black for the message section only */
             color: black;
         }
         .message button {
-            /* is this even necessary? */
+            /* colors for +5 min buttons */
             background-color: #CDDC39;
             color: black;
         }
